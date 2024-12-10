@@ -23,7 +23,7 @@ jobs:
       postgres:
         image: postgres
         env:
-          POSTGRES_USER: ${{ screts.DB_USER }}
+          POSTGRES_USER: ${{ secrets.DB_USER }}
           POSTGRES_PASSWORD: ${{ secrets.DB_PASSWORD }}
           POSTGRES_DB: ${{ secrets.DB_NAME }}
         ports:
